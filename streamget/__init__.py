@@ -20,6 +20,7 @@ from .platforms.bigo.live_stream import BigoLiveStream
 from .platforms.bilibili.live_stream import BilibiliLiveStream
 from .platforms.blued.live_stream import BluedLiveStream
 from .platforms.changliao.live_stream import ChangliaoLiveStream
+from .platforms.chaturbate.live_stream import ChaturbateLiveStream
 from .platforms.chzzk.live_stream import ChzzkLiveStream
 from .platforms.douyin.live_stream import DouyinLiveStream
 from .platforms.douyu.live_stream import DouyuLiveStream
@@ -41,6 +42,7 @@ from .platforms.liveme.live_stream import LiveMeLiveStream
 from .platforms.look.live_stream import LookLiveStream
 from .platforms.maoer.live_stream import MaoerLiveStream
 from .platforms.migu.live_stream import MiguLiveStream
+from .platforms.myfreecams.live_stream import MyFreeCamsLiveStream
 from .platforms.netease.live_stream import NeteaseLiveStream
 from .platforms.pandatv.live_stream import PandaLiveStream
 from .platforms.piaopiao.live_stream import PiaopaioLiveStream
@@ -73,6 +75,7 @@ __all__ = [
     "BilibiliLiveStream",
     "BluedLiveStream",
     "ChangliaoLiveStream",
+    "ChaturbateLiveStream",
     "ChzzkLiveStream",
     "DouyinLiveStream",
     "DouyuLiveStream",
@@ -94,6 +97,7 @@ __all__ = [
     "LookLiveStream",
     "MaoerLiveStream",
     "MiguLiveStream",
+    "MyFreeCamsLiveStream",
     "NeteaseLiveStream",
     "PandaLiveStream",
     "PiaopaioLiveStream",
