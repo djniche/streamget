@@ -138,8 +138,14 @@ class StripchatLiveStream(BaseLiveStream):
 
     async def fetch_stream_url(self, json_data: dict, video_quality: str | int | None = None) -> StreamData:
         if not json_data.get('is_live'):
-            json_data |= {'platform': 'Stripchat'}
-            return wrap_stream(json_data)
+            # 未开播只回传 StreamData 支持的字段（model_id/status 是内部字段）
+            return wrap_stream({
+                'platform': 'Stripchat',
+                'anchor_name': json_data.get('anchor_name'),
+                'is_live': False,
+                'live_url': json_data.get('live_url'),
+                'title': json_data.get('title'),
+            })
 
         quality, _ = self.get_quality_index(video_quality)
         return wrap_stream({
