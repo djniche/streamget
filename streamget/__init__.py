@@ -43,6 +43,7 @@ from .platforms.look.live_stream import LookLiveStream
 from .platforms.maoer.live_stream import MaoerLiveStream
 from .platforms.migu.live_stream import MiguLiveStream
 from .platforms.myfreecams.live_stream import MyFreeCamsLiveStream
+from .platforms.stripchat.live_stream import StripchatLiveStream
 from .platforms.netease.live_stream import NeteaseLiveStream
 from .platforms.pandatv.live_stream import PandaLiveStream
 from .platforms.piaopiao.live_stream import PiaopaioLiveStream
@@ -98,6 +99,7 @@ __all__ = [
     "MaoerLiveStream",
     "MiguLiveStream",
     "MyFreeCamsLiveStream",
+    "StripchatLiveStream",
     "NeteaseLiveStream",
     "PandaLiveStream",
     "PiaopaioLiveStream",
